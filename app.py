@@ -7,8 +7,8 @@ app.secret_key = 'senha_hugo_wendell'
 
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'root',
-    'password': '',
+    'user': 'aluno',
+    'password': 'senha123',
     'database': 'db_trabalho3B'
 }
 
@@ -544,4 +544,5 @@ def excluir_emprestimo(id):
         cursor.close()
         conn.close()
     return redirect(url_for('listar_emprestimos'))
+
 
